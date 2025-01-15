@@ -1,0 +1,107 @@
+/* PHASE 1: Header */
+.header {
+	color: #598D35;
+	font-weight: bold;	
+	display: flex;
+	font-family: 'Montserrat';
+}
+
+.header-list {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav {
+	margin: 0 auto 0 200px;
+	/*Trick to prevent About and Contact from being mis-aligned with LDF++*/
+	height: 0;
+	min-height: 100%;
+	z-index: 2;
+}
+
+.header-logo, .header-list li {
+	display: block;
+}
+
+.header-logo {
+	font-weight: 700;
+	white-space: nowrap;
+	padding: 12px 20px;
+	margin: 0 0 0 auto;
+}
+
+.header-list li a {
+	display: block;
+	margin: 12px 20px;
+	font-size: 18px;
+}
+
+.header-list li:hover, .header-logo:hover {
+	cursor: pointer;
+}
+
+.aboutcontact {
+	margin: 0 auto 0 0;
+}
+
+.header-text {
+	font-size: 40px;
+	/*font-weight: bold;*/
+}
+
+.hamburger {
+	width: 50px;
+	height: auto;
+}
+
+.navimg {
+	width: 75px;
+	height: auto;
+}
+
+.header-list li:hover .hamburgerActive {
+	display: block;
+}
+
+.MenuActive {
+	display: none;
+	/*To not make the hamberActive menu misalign*/
+	position: absolute;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	right: 150px;
+	background-color: white;
+}
+
+.header-list li:hover .MenuActive {
+	display: grid;
+	grid-template-columns: 100px 120px 100px;
+	grid-template-rows: 70px 70px 70px 70px 70px;
+}
+
+.MenuActive img {
+	width: 30px;
+	height: 30px;
+	margin-left: 30px
+}
+
+.MenuActive .extraMarginNeeded {
+	margin-left: 40px;
+}
+
+.MenuActive li {
+	/*width: 50%;*/
+	/*height: auto;*/
+	margin: 5px;
+	color: #252B42;
+	/*font-family: Montserrat;*/
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 0.1px;
+}
+
+.profileMenu {
+	height: 140px;	
+}
